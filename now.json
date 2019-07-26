@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "routes": [
+    {
+      "src": "/chat",
+      "status": 301,
+      "headers": { "Location": "https://meet.google.com/igd-oqkc-thg" }
+    }
+  ]
+}
