@@ -55,7 +55,7 @@ function Content({ classes }) {
               color="textSecondary"
               align="center"
             >
-              Welcome to your new project
+              Sign in
             </Typography>
           </Grid>
         </Grid>

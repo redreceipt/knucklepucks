@@ -22,9 +22,9 @@ let theme = createMuiTheme({
   },
   palette: {
     primary: {
-      light: "#F2C12E",
-      main: "#F2AE2E",
-      dark: "#0A7360"
+      light: "#018A4F",
+      main: "#077463",
+      dark: "#01798A"
     }
   },
   shape: {
@@ -152,7 +152,6 @@ const styles = {
 };
 
 function Layout({ location, title, children, classes }) {
-  // eslint-disable-next-line no-undef
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (

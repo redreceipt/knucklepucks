@@ -12,33 +12,26 @@ import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
 import HomeIcon from "@material-ui/icons/Home";
 import PeopleIcon from "@material-ui/icons/People";
-import DnsRoundedIcon from "@material-ui/icons/DnsRounded";
-import PermMediaOutlinedIcon from "@material-ui/icons/PhotoSizeSelectActual";
-import PublicIcon from "@material-ui/icons/Public";
-import SettingsEthernetIcon from "@material-ui/icons/SettingsEthernet";
-import SettingsInputComponentIcon from "@material-ui/icons/SettingsInputComponent";
-import TimerIcon from "@material-ui/icons/Timer";
-import SettingsIcon from "@material-ui/icons/Settings";
-import PhonelinkSetupIcon from "@material-ui/icons/PhonelinkSetup";
 import Logo from "components/Logo";
 const categories = [
   {
-    id: "Develop",
+    id: "This Week",
+    children: [{ id: "Match-ups", icon: <PeopleIcon />, page: "ml" }]
+  },
+  {
+    id: "This Season",
     children: [
-      { id: "Authentication", icon: <PeopleIcon />, page: "authentication" },
-      { id: "Database", icon: <DnsRoundedIcon />, page: "database" },
-      { id: "Storage", icon: <PermMediaOutlinedIcon />, page: "storage" },
-      { id: "Hosting", icon: <PublicIcon />, page: "hosting" },
-      { id: "Functions", icon: <SettingsEthernetIcon />, page: "functions" },
-      { id: "ML Kit", icon: <SettingsInputComponentIcon />, page: "ml" }
+      { id: "Rankings", icon: <PeopleIcon />, page: "ml" },
+      { id: "Players", icon: <PeopleIcon />, page: "authentication" },
+      { id: "Schedules", icon: <PeopleIcon />, page: "authentication" },
+      { id: "Trades", icon: <PeopleIcon />, page: "ml" }
     ]
   },
   {
-    id: "Quality",
+    id: "Archives",
     children: [
-      { id: "Analytics", icon: <SettingsIcon />, page: "analytics" },
-      { id: "Performance", icon: <TimerIcon />, page: "performance" },
-      { id: "Test Lab", icon: <PhonelinkSetupIcon />, page: "lab" }
+      { id: "Constitution", icon: <PeopleIcon />, page: "ml" },
+      { id: "Draft Results", icon: <PeopleIcon />, page: "ml" }
     ]
   }
 ];
@@ -73,7 +66,7 @@ const styles = theme => ({
     }
   },
   itemActiveItem: {
-    color: "#F2AE2E"
+    color: "#564098"
   },
   itemPrimary: {
     color: "inherit",
@@ -104,7 +97,7 @@ function Navigator({ classes, location = null, ...rest }) {
             <Grid item>
               <Logo />
             </Grid>
-            <Grid item>Paperbase</Grid>
+            <Grid item>Knucklepucks</Grid>
           </Grid>
         </ListItem>
 
