@@ -111,7 +111,7 @@ function Navigator({ classes, location = null, ...rest }) {
                 primary: classes.itemPrimary
               }}
             >
-              Project Overview
+              My Dashboard
             </ListItemText>
           </ListItem>
         </Link>
